@@ -1,0 +1,32 @@
+/* Color theme */
+$mint-green: hsla(156, 95%, 59%, 1);
+$deep-blue: hsl(246, 34%, 12%);
+$cobalt: hsl(197, 99%, 32%);
+$highlight-second: hsl(183, 97%, 35%);
+$highlight: hsl(30, 97%, 71%);
+$anthracite: hsla(220, 5%, 14%, 1);
+$anthracite-translucent: hsla(220, 5%, 14%, .5);
+$light: hsl(0, 0%, 92%);
+$dark: hsla(0, 0%, 0%, .8);
+$bg-opac: hsla(0, 0%, 0%, .5);
+
+/* Fonts */
+@import url('https://fonts.googleapis.com/css?family=PT+Sans');
+@import url('https://fonts.googleapis.com/css?family=Raleway:100,300,700|Material+Icons');
+
+$main-font: 'Raleway', sans-serif;
+$second-font: 'PT Sans', sans-serif;
+
+@mixin raleway($weight, $size) {
+  font: {
+    family: 'Raleway';
+    weight: $weight;
+    size: $size;
+  }
+}
+
+@keyframes grow {
+  0% { height: 100px; width: 40px; opacity: .1 }
+  50% { height: 120px; width: 45px; opacity: 1; }
+  100% { height: 100px; width: 40px; opacity: .1 }
+}
